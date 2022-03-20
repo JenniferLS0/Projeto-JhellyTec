@@ -1,0 +1,113 @@
+﻿<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta name="author" content="Jennifer Lima" />
+    <title>Faça seu Orçamento!</title>
+    <link rel="stylesheet" href="stylesheet2.css" />
+
+    <style>
+      /*estilizando o botões*/
+      input[type='submit'],
+      input[type='reset'],
+      input[type='button'] {
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+        margin-left: 7px;
+        margin-top: 4px;
+        border: none;
+        margin-bottom: 6px;
+        color: rgb(200, 200, 200);
+        background-color: rgb(25, 26, 27);
+      }
+
+      input[type='submit']:hover,
+      input[type='reset']:hover,
+      input[type='button']:hover {
+        border: 1px solid rgb(0, 251, 253);
+        box-shadow: 0px 0px 3px 3px rgb(0, 251, 253);
+        transition: all 0.8s;
+        color: rgb(0, 251, 253);
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <!--começando o formulario-->
+      <form id="formulario" method="post" action="orcamento.php">
+        <div id="titulo">
+          <h2>Cadastro de Orçamento</h2>
+        </div>
+
+        <!--inserir o nome-->
+        <div id="dados">
+          <p>Insira o seu nome completo:</p>
+          <input
+            type="text"
+            class="txt"
+            name="txtnome"
+            placeholder="Nome"
+            onclick="VerificaEmail()"
+            required
+          />
+
+          <span class="input-border"></span>
+
+          <!--inserir o email-->
+          <p>Insira seu e-mail:</p>
+          <input
+            type="text"
+            class="txt"
+            name="txtemail"
+            placeholder="Email"
+            onclick="VerificaSenha()"
+            required
+          />
+
+          <span class="input-border"></span>
+
+          <!--inserir o telefone-->
+          <p>Insira seu telefone:</p>
+          <input
+            type="text"
+            class="txt"
+            name="txttelefone"
+            placeholder="Telefone"
+            onclick="VerificaSenha()"
+            required
+          />
+
+          <span class="input-border"></span>
+        </div>
+
+        <!--aviso de contato-->
+        <br />
+        <h2 id="info">Entraremos em contato em até 2 dias úteis.</h2>
+        <br />
+
+        <!--botões-->
+        <div id="botoes">
+          <!--botão enviar-->
+          <input type="submit" value="Enviar" />
+
+          <!--botão limpar-->
+          <input type="reset" onClick="Limpar()" />
+
+          <!--botão para voltar para o index-->
+          <input
+            type="button"
+            value="Voltar"
+            onClick="window.location.href='index.html'"
+          />
+        </div>
+      </form>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(21, 21, 21);
+}
+
+/*estilizando o titulo*/
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url('Merriweather-Regular.ttf');
+}
+
+h2 {
+  color: rgb(108, 81, 219);
+  font-size: 30px;
+}
+
+/*estilizando o fromulario*/
+#formulario {
+  background-color: rgb(25, 26, 27);
+  border-radius: 20px;
+  color: rgb(200, 200, 200);
+  font-family: 'Merriweather-Regular';
+  margin-top: 11%;
+  width: 400px;
+  padding: 1%;
+}
+
+/*estilizando caixas de texto*/
+input[type="text"] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather-Regular';
+  text-align: center;
+  color: rgb(200, 200, 200);
+  outline: none;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.560);
+  background-color: #d4b5d200;
+}
+
+input[type="text"]:hover {
+  border-color: rgb(0, 251, 253);
+}
+
+/*estilizando o aviso de contato*/
+#info {
+  color: rgb(108, 81, 219);
+  font-size: 15px;
+}
+
+/*estilizando o botões*/
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgb(0, 251, 253);
+  margin-left: 7px;
+  color: rgb(200, 200, 200);
+  background-color: rgb(25, 26, 27);
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover {
+  box-shadow: 0px 0px 3px 3px rgb(0, 251, 253);
+  transition: all 0.8s;
+  font-weight: bold;
+  color: rgb(0, 251, 253);
+}

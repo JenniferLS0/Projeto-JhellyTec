@@ -1,0 +1,160 @@
+﻿
+
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta name="author" content="Jennifer Lima" />
+    <title>JhellyTec</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <!--começando o menu-->
+    <header id="header">
+      <a href="/"><img id="logoimg" src="logo1.png" /></a>
+      <span id="nmEmpresa">JhellyTec</span>
+      <nav id="nav">
+        <ul id="menu">
+          <li class="itensmenu"><a href="#sobre1">Company</a></li>
+
+          <li class="itensmenu"><a href="portifolioingles.html">Portfolio</a></li>
+
+          <li class="itensmenu"><a href="trabalheconoscoIngles.html">Work with us</a></li>
+
+          <li class="itensmenu"><a href="orcamentoIngles.html">Request a quote</a></li>
+
+          <li class="itensmenu"><a href="#contato">Contact</a></li>
+         
+        </ul>
+		<ul id="hamburguer">
+		      <li id="hamburg" onClick="abrirMenu()">&#9776;</li>
+		</ul>
+        <!--abrir menu hamburguer-->
+        <aside id="menu-lateral"> 
+          <ul>
+          <li><a href="#sobre1">Company</a></li>
+          <li>&nbsp;</li>
+          <li><a href="portifolioingles.html">Portfolio</a></li>
+          <li>&nbsp;</li>
+          <li><a href="trabalheconosco.html">Work with us</a></li>
+          <li>&nbsp;</li>
+          <li><a href="orcamento.html">Request a quote</a></li>
+          <li>&nbsp;</li>
+          <li><a href="#contato">Contact</a></li>
+          <li>&nbsp;</li>
+          <li><a href="javascript:void(0)" class="closebtn" onClick="fechaMenu()">&larr;</a></li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <!--section que agrupa tudo que está abaixo do cabeçalho/menu-->
+	
+    <section id="geral">
+      <a id="bandeira"href="index.html"><img src="brasil.png"></a>
+	  
+      <!--começando o carrosel de fotos/ slidershow-->
+      <div id="slider">
+	  <img id="img_sslide" src="imagem1.png" name="slide"/>
+		<form id="bolinhas">
+			<input type="radio" id="v1" name="m" onClick="Muda(1)"/>
+			<input type="radio" id="v2" name="m" onClick="Muda(2)"/>
+			<input type="radio" id="v3" name="m" onClick="Muda(3)"/>
+			<input type="radio" id="v4" name="m" onClick="Muda(4)"/>
+		</form>
+      </div>
+	  
+      <!--JS da pagina-->
+      <script src="script.js"></script>
+      <!--slogan da empresa-->
+      <div id="fraseefeito">
+        <center>
+          <h1 class="anima"><span>Sys</span>tematizing <span>yo</span>ur busin<span>ess</span>.</h1>
+      </center>
+	</div>
+      <br />
+      <!--subtitulo da sessão sobre da pagina-->
+	  <div id="box1">
+      <h2 id="sobre1">What is our company?</h2>
+	  </div>
+      <!--começando a sessão sobre-->
+      <div id="sobre">
+        <div id="text1">
+          <h3 id="missao">
+            <br><br><br>
+            Design software with computer technologies that will be
+            accessible for people and companies from different parts of the world,
+            stimulating dreams and the resistance not to give up.
+            <br /><br />To be one of the best systems developers,
+            with technological modernity and transparency with our customers,
+            maintaining a trusting and lasting relationship.<br /><br />Leverage
+            dreams and business of our customers through technology, making
+            our best in each project we receive, destining a
+            characteristic in each of them.
+          </h3>
+        </div>
+        <!--video da sessão sobre (video falndo os valores da empresa)-->
+        <div id="videoValores">
+          <video autoplay muted loop>
+            <source
+              class="style_prevu_kit"
+              src="videoValoresIngles.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+      <br><br><br>
+      <!--botão para ir  para a pagina de fazer orçamento-->
+      <button id="fazerOrcamento" onClick="window.location.href='orcamento.html'">Request a quote!</button>
+      <br><br><br>
+      <!--começando a sessão oque fazemos da pagina-->
+      <section id="oquefazemos">
+	        <table>
+				<tr><td class="col1"><img src="lampada.png" id="PLanejamento"/></td> <td class="col2"> <p>We do all the planning of digital solutions to provide your company with more modern and optimized techniques.</p></td></tr>
+				<tr><td colspan="2"></td></tr>
+                <tr><td colspan="2"></td></tr>
+				<tr><td colspan="2"></td></tr>
+				
+				<tr><td class="col1"><img src="design.png" id="design"/></td> <td><p> We have a design team that provides all parts of digital design, such as: logos, flyers, business cards, banners...
+				All with a lot of creativity, harmony of colors and shapes, in addition to elegance and professionalism.</p></td></tr>
+			    <tr><td colspan="2"></td></tr>
+                <tr><td colspan="2"></td></tr>
+				<tr><td colspan="2"></td></tr>
+				
+				<tr><td class="col1"><img src="programador.png" id="desenvolvimento"/></td><td><p>We have developers properly trained to deliver software/websites with optimized technologies, creativity, practicality and modernity. Always following the customer's tastes and requirements.</p>  </td>  </tr>
+				<tr><td colspan="2"></td></tr>
+                <tr><td colspan="2"></td></tr>
+				<tr><td colspan="2"></td></tr>
+				
+				<tr><td class="col1"><img src="consultoria.png" id="consultoria"/> </td> <td><p>We make available employees to do all the consulting in case you have any setbacks in our software or implementations.</p>  </td></tr>
+			
+			</table>
+ 
+      </section>
+      <br/><br/><br/><br/><br/><br/>
+      <section id="contato">
+        <div id="icones">
+          <section id="redes">
+            <div class="linkredes"><a href="https://www.facebook.com/Jhelly-Tec-104913745117696"><img src="face.png"/></a></div>
+            <br/>
+			<div class="linkredes"><a href="https://www.instagram.com/jhellytec/"><img class="imgredes" src="insta.png"/></a></div>
+            <br/>
+			<div class="linkredes"><a href="https://www.linkedin.com/in/jhelly-tec-908701212/"><img src="linkedin.png"/></a></div>
+			<br/>
+			<div id="wpp">
+			<div class="linkredes"><a href="https://api.whatsapp.com/send?phone=5511983968959"><img src="wpp.png"/></a></div>
+			</div>
+		</section>
+        <div id="mapa">
+          <center>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3220077262254!2d-46.73095068527695!3d-23.52091808470296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d3806777%3A0x8d03885c01c45d8a!2sR.%20Guaip%C3%A1%2C%20678%20-%20Vila%20Leopoldina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002675-031!5e0!3m2!1sen!2sbr!4v1624501366756!5m2!1sen!2sbr"" allowfullscreen="" loading="lazy"></iframe>
+          </center>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

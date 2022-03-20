@@ -1,0 +1,503 @@
+body {
+  background-color: rgb(21, 21, 21);
+}
+
+/* Mudando a barra de rolagem*/
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgb(25, 26, 27);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgb(108, 81, 219);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 1px;
+  background-color: rgb(25, 26, 27);
+  border-radius: 3px;
+}
+
+body,
+ul {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*fazendo o menu*/
+
+header {
+  background-color: rgb(21, 21, 21);
+  display: flex;
+  width: 100%;
+  height: 10.3%;
+}
+
+#logoimg {
+  height: 3.4rem;
+  width: 5.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 5px;
+}
+
+#nmEmpresa {
+  color: rgb(215, 215, 215);
+  font-size: 30px;
+  padding: 20px;
+}
+
+#hamburguer {
+  list-style: none;
+}
+
+#menu li {
+  display: inline-table;
+  float: left;
+  list-style: none;
+  text-align: center;
+  margin-top: 1.2vw;
+  padding: 5px;
+}
+
+.itensmenu:hover {
+  transition-duration: 0.4s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+  transition-property: all;
+  border-bottom: 2px double rgb(0, 251, 253);
+  border-radius: 15px;
+}
+
+#menu li a {
+  font-size: 1.5vw;
+  font-family: Tahoma;
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+  margin-top: 50px;
+  padding: 10px;
+}
+
+#nav {
+  display: inline;
+  width: 100%;
+  margin-left: 17.5%;
+  visibility: visible;
+}
+
+#hamburg {
+  color: rgb(200, 200, 200);
+  margin-right: 2%;
+  width: auto;
+  position: relative;
+  visibility: hidden;
+  transition: visibility 0.3s;
+  cursor: pointer;
+}
+
+#menu-lateral {
+  width: 0%;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  margin-left: 0%;
+  background-color: rgb(21, 21, 21);
+  transition: 0.5s;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Merriweather-Regular";
+}
+
+#menu-lateral a {
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+}
+
+#menu-lateral a:hover {
+  transition-duration: 0.4s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+  transition-property: all;
+  border-bottom: 2px double rgb(0, 251, 253);
+  border-radius: 10px;
+}
+
+#menu-lateral ul {
+  list-style: none;
+  margin-left: 0%;
+  left: 0%;
+}
+
+#geral {
+
+  align-items: center;
+  padding: 0%;
+
+}
+
+/*Fazendo o link para mudar de português para inglês*/
+
+#bandeira {
+  margin-left: 95%;
+  z-index: 5;
+  position: fixed;
+}
+
+/*animação bandeira*/
+#bandeira:hover {
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.3);
+}
+
+/* fazendo o carrosel de fotos */
+#slider {
+  width: 100%;
+  height: 70%;
+  border: none;
+}
+
+#img_sslide {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#bolinhas {
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url('Merriweather-Regular.ttf');
+}
+
+/*fazendo frase de efeito/slogan*/
+
+.anima {
+  color: rgb(0, 251, 253);
+  font-size: 3em;
+  font-family: "Merriweather-Regular";
+  display: inline-block;
+  border-right: 2px solid white;
+  padding-right: 3px;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: pisca normal infinite .8s, escrever normal 6s steps(55) both;
+}
+
+@keyframes pisca {
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes escrever {
+  100% {
+    max-width: 100%;
+  }
+}
+
+/* subtitulo "o que é a nossa empresa" */
+
+#sobre1 {
+  color: rgb(108, 81, 219);
+  font-family: "Merriweather-Regular";
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* fazendo a sessão "oque é nossa empresa */
+
+#missao {
+  margin: 0;
+  width: 98%;
+}
+
+#sobre {
+  display: flex;
+  float: top;
+  margin: 0;
+  background-color: rgb(25, 26, 27);
+  padding: 0;
+  position: relative;
+  top: 0px;
+  font-size: 100%;
+}
+
+#videoValores {
+  width: 70%;
+  height: 70%;
+  padding: 40px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+video:hover {
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
+}
+
+#text1 {
+  color: rgb(180, 180, 180);
+  text-align: center;
+  font-family: Tahoma;
+  width: 47%;
+  height: 50%;
+  padding: 1%;
+  padding-top: 4%;
+}
+
+/* fazendo o botão "Faça um orçamento" */
+
+#fazerOrcamento {
+  margin-left: 70%;
+  width: 20%;
+  height: 4vw;
+  font-size: 1.7vw;
+  cursor: pointer;
+  background: transparent;
+  color: rgb(0, 251, 253);
+  outline: none;
+  border: none;
+  font-family: 'Merriweather-Regular';
+  font-weight: bold;
+  position: relative;
+  transition: all 0.5s;
+}
+
+/* fazendo a animaçao do botão "Faça um orçamento" */
+#fazerOrcamento:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: rgb(0, 251, 253);
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+#fazerOrcamento:hover::before {
+  width: 100%;
+}
+
+#fazerOrcamento:hover {
+  color: rgb(21, 21, 21)
+}
+
+/* fazendo a sessão "oque fazemos"*/
+
+#oquefazemos {
+  padding: 2%;
+  background-color: rgb(25, 26, 27);
+  font-family: 'Merriweather-Regular';
+}
+
+#oquefazemos table {
+  width: 95%;
+  margin-left: 3%;
+}
+
+table tr td img {
+  width: 40%;
+  height: 40%;
+}
+
+#oquefazemos .col1 {
+  width: 20%;
+  text-align: right;
+}
+
+#oquefazemos .col2 {
+  width: 80%;
+}
+
+#oquefazemos table tr td p {
+  width: 70%;
+  margin-left: 8%;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+  color: rgb(180, 180, 180);
+  font-size: 1.9vw;
+}
+
+#oquefazemos table tr td p:hover {
+  transform: translateY(-10px);
+  color: rgb(0, 251, 253);
+}
+
+#contato {
+  background-color: rgb(25, 26, 27);
+  width: 98%;
+  padding: 1%;
+  display: table;
+}
+
+
+#redes {
+  display: inline;
+  float: left;
+  padding: 2%;
+  margin-left: 4%;
+}
+
+#wpp {
+  margin-left: 9px;
+  margin-top: 10px;
+}
+
+.linkredes {
+  transition: all 0.4s ease-out;
+}
+
+.linkredes:HOVER {
+  transform: translateY(-8px);
+}
+
+iframe {
+  width: 60%;
+  height: 400px;
+  border-radius: 30px;
+  margin-top: 3.5%;
+  float: left-side;
+}
+
+/* Deixando o site responsivo*/
+
+/* alinhando os itens */
+@media only screen and (max-width:1500px) {
+  #sobre {
+    margin-top: 2%;
+  }
+
+  #fraseefeito h1 {
+    margin-top: 2.5%;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+
+  #nav {
+    margin-left: 10%;
+  }
+
+  header {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    height: 12%;
+  }
+
+  #sobre {
+    display: table;
+    margin-top: 40%;
+    margin-right: 0%;
+    height: 100%;
+    width: 100%;
+  }
+
+  #videoValores {
+    width: 90%;
+    height: 50%;
+  }
+
+  video {
+    width: 90%;
+    height: 77%;
+  }
+
+  #text1 {
+    width: 100%;
+    margin-bottom: 1%;
+  }
+}
+
+/* alinhando os itens e começando o menu hamburguer*/
+
+@media only screen and (max-width:1000px) {
+  #sobre {
+    margin-top: 2%;
+  }
+
+
+  #fraseefeito h1 {
+    font-size: 5vw;
+    margin-bottom: 4%;
+  }
+
+  #nav {
+    margin-top: 1%;
+    margin-left: 0%;
+
+  }
+
+  #menu {
+    visibility: hidden;
+  }
+
+  #hamburg {
+    visibility: visible;
+    font-size: 40px;
+    color: rgb(200, 200, 200);
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu-lateral ul {
+
+    padding: 15px;
+    margin-left: 0%;
+  }
+
+  #menu-lateral a {
+    font-size: 2.7vw;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width:770px) {
+  #hamburg {
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width:970px) {
+  #fraseefeito h1 {
+    margin-bottom: 7%;
+  }
+}
